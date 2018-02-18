@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Yieldex Report Connector</title>
+    <meta http-equiv="Cache-Control" content="no-store" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js" type="text/javascript"></script>
+    <script src="yieldexReportConnector.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="container text-center">
+    <h2 class="jumbotron-heading">Connect to Yieldex Report Data</h1>
+    <form>
+            <p>
+                <input class="form-control" type="text" name="username" id="username" placeholder="Username" />
+                <label class="sr-only" for="username">Username</label>
+            </p>
+            <p>
+                <input class="form-control" type="text" name="password" id="password" placeholder="Password or token" />
+                <label class="sr-only" for="password">Password or token</label>
+            </p>
+            <p>
+                <input class="form-control" type="text" name="host" id="host" placeholder="Yieldex Client Host" />
+                <label class="sr-only" for="host">Yieldex Client Host</label>
+            </p>
+            <p>
+                <input class="form-control" type="text" name="reportid" id="reportid" placeholder="Report ID" />
+                <label class="sr-only" for="reportid">Report ID</label>
+            </p>
+            <div>
+                <button type="button" id="submitButton" class="btn btn-lg btn-primary btn-block">Get Report Data</button>
+            </div>
+    </form>
+  </div>
+</body>
+
+</html>
